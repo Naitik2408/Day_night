@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    background: url(volha-hrysheuskaya-LEC8AlLmpUA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    background: linear-gradient(rgba(0, 0, 0, 0.838),rgba(0, 0, 0, 0.349)),url(volha-hrysheuskaya-LEC8AlLmpUA-unsplash.jpg);
+    background-size: cover;
+}
+.bulb{
+    position: absolute;
+    right: 400px;
+    text-align: center;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    width: 1px;
+    height: 150px;
+    background-color: black;
+    z-index: 2;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 40px 20px rgba(255, 255, 255, 0.628);
+}
+.button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.button1{
+    width: 250px;
+    height: 100px;
+    background-color: rgb(16, 16, 16);
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    cursor: pointer;
+    position: relative;
+}
+.button2{
+    background-color: rgb(59, 59, 59);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 3px rgb(39, 39, 39);
+    z-index: 999;
+}
+/* .random{
+    display: none;
+} */
+.random i{
+    position: absolute;
+    top: 120px;
+    left: 146px;
+    font-size: 50px;
+    color: rgb(0, 255, 0);
+    cursor: pointer;
+}
