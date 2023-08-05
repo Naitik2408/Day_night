@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-section{
+
+section {
     width: 100vw;
     height: 100vh;
     background: url(volha-hrysheuskaya-LEC8AlLmpUA-unsplash.jpg);
@@ -12,11 +13,13 @@ section{
     justify-content: center;
     align-items: center;
 }
-.section2{
-    background: linear-gradient(rgba(0, 0, 0, 0.838),rgba(0, 0, 0, 0.349)),url(volha-hrysheuskaya-LEC8AlLmpUA-unsplash.jpg);
+
+.section2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.838), rgba(0, 0, 0, 0.349)), url(volha-hrysheuskaya-LEC8AlLmpUA-unsplash.jpg);
     background-size: cover;
 }
-.bulb{
+
+.bulb {
     position: absolute;
     right: 400px;
     text-align: center;
@@ -25,26 +28,30 @@ section{
     flex-direction: column;
     align-items: center;
 }
-.line{
+
+.line {
     width: 1px;
     height: 150px;
     background-color: black;
     z-index: 2;
 }
-.circle{
+
+.circle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: white;
     box-shadow: 1px 1px 40px 20px rgba(255, 255, 255, 0.628);
 }
-.button{
+
+.button {
     display: flex;
     align-items: center;
     gap: 20px;
     position: relative;
 }
-.button1{
+
+.button1 {
     width: 250px;
     height: 100px;
     background-color: rgb(16, 16, 16);
@@ -55,7 +62,8 @@ section{
     cursor: pointer;
     position: relative;
 }
-.button2{
+
+.button2 {
     background-color: rgb(59, 59, 59);
     width: 80px;
     height: 80px;
@@ -64,14 +72,46 @@ section{
     box-shadow: 1px 1px 5px 3px rgb(39, 39, 39);
     z-index: 999;
 }
-/* .random{
-    display: none;
-} */
-.random i{
+
+.random i {
     position: absolute;
     top: 120px;
     left: 146px;
     font-size: 50px;
     color: rgb(0, 255, 0);
     cursor: pointer;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    section {
+        background-position: center;
+    }
+
+    .section2 {
+        background-position: center;
+    }
+
+    .button {
+        margin-bottom: 300px;
+    }
+
+    .button1 {
+        width: 230px;
+        height: 80px;
+    }
+
+    .button2 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .random i {
+        top: 100px;
+        left: 130px;
+    }
+    .bulb{
+        right: 70px;
+        top: -50px;
+    }
 }
